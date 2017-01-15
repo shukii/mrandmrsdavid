@@ -1,24 +1,24 @@
-$(document).ready(function(){
-      var clock = $('.clock').FlipClock({
-          countdown: true,
-          clockFace: 'DailyCounter'
+// $(document).ready(function(){
+//       var clock = $('.clock').FlipClock({
+//           countdown: true,
+//           clockFace: 'DailyCounter'
 
-      });
+//       });
 
-      var now = new Date();
-      var wedding = new Date();
-      wedding.setFullYear(2017);
-      wedding.setMonth(5);
-      wedding.setDate(11);
-      wedding.setHours(16);
-      wedding.setMinutes(0);
-      wedding.setSeconds(0);
+//       var now = new Date();
+//       var wedding = new Date();
+//       wedding.setFullYear(2017);
+//       wedding.setMonth(5);
+//       wedding.setDate(11);
+//       wedding.setHours(16);
+//       wedding.setMinutes(0);
+//       wedding.setSeconds(0);
 
-      var seconds = (wedding.getTime() - now.getTime()) / 1000;
+//       var seconds = (wedding.getTime() - now.getTime()) / 1000;
 
-      clock.setTime(seconds);
-      clock.start();
-  });
+//       clock.setTime(seconds);
+//       clock.start();
+//   });
 
 $('li img').on('click',function(){
     var src = $(this).attr('src');
@@ -94,5 +94,5 @@ $(document).on('click', 'a.controls', function(){
 }); 
 
 $('#weddingTab').click(function() {
-  $('#mapDiv').html('<iframe src="https://www.google.com/maps/d/embed?mid=14Tdcu1Nov6nO3gu66weiIIpCjaU" width="640" height="480"></iframe>');
+  $('#mapDiv').html('<iframe src="https://www.google.com/maps/d/embed?mid=14Tdcu1Nov6nO3gu66weiIIpCjaU" width="100%" height="600"></iframe>');
 });
